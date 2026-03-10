@@ -30,7 +30,7 @@ public class Post {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "post")
     @JsonIgnore
     private List<Comment> comments;
 }

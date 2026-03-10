@@ -43,4 +43,7 @@ public class User {
 
     @ManyToMany(mappedBy = "following")
     private List<User> followers;
+
+    @OneToMany(mappedBy = "user")
+    private List<Comment> comments;
 }
